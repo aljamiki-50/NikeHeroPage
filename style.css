@@ -52,9 +52,7 @@ nav ul li a:hover {
 }
 
 nav ul li a:focus {
-    background-color: yellow;
-    
-    
+  background-color: yellow;
 }
 
 .search-icon,
@@ -143,13 +141,136 @@ nav ul li a:focus {
 .cta-button:hover {
   background-color: #c0392b;
 }
+/* A shop page That should be created here for an actuall shop let's say */
+/* Shop Section Styles */
+/* Shop Section Styles */
+#shop {
+  padding: 90px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  background: url("https://images.unsplash.com/photo-1658492572022-ecf972b354a0?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center center/cover;
+  /*  */
+}
+
+#shop h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  max-width: 300px;
+  width: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+.product-card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #e74c3c;
+  font-family: "Roboto", sans-serif;
+}
+
+/* End of- Shop Section Styles */
+/* End of- Shop Section Styles */
+
+/* Men Section Styles */
+#men {
+  padding: 70px 20px;
+  background-color: #333;
+  text-align: center;
+}
+
+.mb {
+  margin-bottom: 3%;
+}
+
+#men h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.product-card {
+  background-color: #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s;
+  max-width: 300px;
+  width: 100%;
+  color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.product-card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #e74c3c;
+  font-family: "Roboto", sans-serif;
+}
+
+/* End for The Men sec here  */
+/* End for The Men sec here  */
+/* End for The Men sec here  */
 
 /* Responsive Design for small screen in case  */
 @media (max-width: 768px) {
   .hero {
     height: 100vh;
-    background: url("https://images.unsplash.com/photo-1677055089360-c2aa1ac5d20e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-      no-repeat center center/cover;
+    /* background: url("https://images.unsplash.com/photo-1677055089360-c2aa1ac5d20e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+      no-repeat center center/cover; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,4 +339,14 @@ nav ul li a:focus {
   .active {
     left: 0%;
   }
+  /* For the shop section here  */
+
+  #shop h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* End of the shop section here  */
 }
