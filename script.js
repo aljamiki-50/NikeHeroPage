@@ -13,8 +13,6 @@ function MenuBar() {
 }
 
 navLinks.childNodes.forEach((link) => {
-  console.log(link.textContent);
-
   link.addEventListener("click", () => {
     console.log(link.textContent);
     switch (link.textContent) {
@@ -30,7 +28,6 @@ navLinks.childNodes.forEach((link) => {
         }, 2000);
 
         MenuBar();
-
         break;
       case "Men":
         const Men = document.getElementById("men");
@@ -44,6 +41,8 @@ navLinks.childNodes.forEach((link) => {
         break;
       case "Women":
         section.style.backgroundImage = `url("https://images.unsplash.com/photo-1521093470119-a3acdc43374a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmlrZSUyMGFpciUyMG1lbnNob2VzJTIwc2hlbGZ8ZW58MHx8MHx8fDA%3D)`;
+        const women = document.getElementById("women");
+        women.scrollIntoView({ behavior: "smooth" });
         MenuBar();
         break;
       case "Kids":
